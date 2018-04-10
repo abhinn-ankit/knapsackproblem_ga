@@ -27,3 +27,4 @@ hs_err_pid*
 #intellij files
 ./KnapsackProblem/.idea
 ./KnapsackProblem/KnapsackProblem.iml
+./KnapsackProblem/out
