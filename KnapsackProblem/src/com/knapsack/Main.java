@@ -13,12 +13,13 @@ public class Main {
         System.out.println("Enter the maximum number of generations: ");
         int maxGenerations = (int) knapsack.inputNumber();
 
-        System.out.println("Enter the crossover probability: ");
-        double crossoverProbability = (double) knapsack.inputNumber();
+//        System.out.println("Enter the crossover probability: ");
+//        double crossoverProbability = (double) knapsack.inputNumber();
 
         System.out.println("Enter the mutation probability: ");
         double mutationProbability = (double) knapsack.inputNumber();
 
+        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, populationSize, maxGenerations, mutationProbability);
 
     }
 
