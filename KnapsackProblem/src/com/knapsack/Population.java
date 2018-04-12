@@ -11,15 +11,15 @@ public class Population {
 	public Population(int sizeOfPopulation, Knapsack knapsack) {
 		this.sizeOfPopulation = sizeOfPopulation;
 		this.numberOfItems = knapsack.numberOfItems;
-		makePopulation();
 	}
 	
-	private void makePopulation() {
+	public ArrayList<String> makePopulation() {
 		
         for(int i = 0; i < sizeOfPopulation; i++) {
             
             population.add(makeGene());      
         }
+        return population;
     }
 	
     private String makeGene() {
@@ -36,6 +36,10 @@ public class Population {
         }
         
         return gene.toString();
+    }
+
+    public static int evaluatePopulation() {
+        return 0;
     }
 
 }
