@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class Knapsack {
 
-    private int numberOfItems;
-    private int knapsackCapacity;
-    private int maxWeight;
-    private int maxValue;
+    public int numberOfItems;
+    public int knapsackCapacity;
+    public int maxWeight;
+    public int maxValue;
 
-    private ArrayList<Double> valuesOfItems;
-    private ArrayList<Double> weightOfItems;
+    public ArrayList<Double> valuesOfItems;
+    public ArrayList<Double> weightOfItems;
 
     public Knapsack() {
         this.numberOfItems = 0;

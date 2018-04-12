@@ -28,3 +28,7 @@ hs_err_pid*
 KnapsackProblem/.idea/*
 KnapsackProblem/KnapsackProblem.iml
 KnapsackProblem/out/*
+/bin/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
