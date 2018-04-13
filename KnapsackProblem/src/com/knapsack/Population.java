@@ -6,11 +6,13 @@ public class Population {
 	
 	public ArrayList<String> population = new ArrayList<String>();
 	int sizeOfPopulation = 0;
-	int numberOfItems = 0;
+    int numberOfItems = 0;
+    Knapsack knapsackObj;
 	
 	public Population(int sizeOfPopulation, Knapsack knapsack) {
 		this.sizeOfPopulation = sizeOfPopulation;
-		this.numberOfItems = knapsack.numberOfItems;
+        this.numberOfItems = knapsack.numberOfItems;
+        this.knapsackObj = knapsack;
 	}
 	
 	public ArrayList<String> makePopulation() {
@@ -38,8 +40,19 @@ public class Population {
         return gene.toString();
     }
 
-    public static int evaluatePopulation() {
-        return 0;
+    public ArrayList<Double> evaluatePopulation(ArrayList<Double> fitness) {
+
+        //double totalFitnessPerGeneration = 0;
+
+        for(int i = 0; i < this.sizeOfPopulation; i++) {
+
+            double temp = Individual.evaluateGene(population.get(i), knapsackObj);
+
+            //totalFitnessPerGeneration = totalFitnessPerGeneration + temp;
+
+            fitness.add(temp);
+        }
+        return fitness;
     }
 
 }

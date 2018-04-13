@@ -11,8 +11,8 @@ public class Knapsack {
     public int maxWeight;
     public int maxValue;
 
-    public ArrayList<Double> valuesOfItems;
-    public ArrayList<Double> weightOfItems;
+    public ArrayList<Integer> valuesOfItems;
+    public ArrayList<Integer> weightOfItems;
 
     public Knapsack() {
         this.numberOfItems = 0;
@@ -44,8 +44,8 @@ public class Knapsack {
 
         // Randomly generate weight and value
         for (int i = 0; i < numberOfItems; i++) {
-            valuesOfItems.add((double) randomValue.nextInt(maxValue) + 1);
-            weightOfItems.add((double) randomWeight.nextInt(maxWeight) + 1);
+            valuesOfItems.add((int) randomValue.nextInt(maxValue) + 1);
+            weightOfItems.add((int) randomWeight.nextInt(maxWeight) + 1);
         }
 
     }
