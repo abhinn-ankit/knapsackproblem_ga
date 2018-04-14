@@ -8,6 +8,7 @@ public class Population {
 	int sizeOfPopulation = 0;
     int numberOfItems = 0;
     Knapsack knapsackObj;
+    double totalFitnessPerGeneration = 0;
 	
 	public Population(int sizeOfPopulation, Knapsack knapsack) {
 		this.sizeOfPopulation = sizeOfPopulation;
@@ -42,17 +43,17 @@ public class Population {
 
     public ArrayList<Double> evaluatePopulation(ArrayList<Double> fitness) {
 
-        //double totalFitnessPerGeneration = 0;
+        this.totalFitnessPerGeneration = 0;
 
         for(int i = 0; i < this.sizeOfPopulation; i++) {
 
             double temp = Individual.evaluateGene(population.get(i), knapsackObj);
 
-            //totalFitnessPerGeneration = totalFitnessPerGeneration + temp;
+            this.totalFitnessPerGeneration += temp;
 
             fitness.add(temp);
         }
         return fitness;
     }
-    
+
 }
