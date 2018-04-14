@@ -1,56 +1,49 @@
-package com.knapsack;
+package main.java.com.knapsack;
 
 import java.util.ArrayList;
 
 public class Population {
 	
-	public ArrayList<String> population = new ArrayList<String>();
-	int sizeOfPopulation = 0;
-    int numberOfItems = 0;
-    Knapsack knapsackObj;
-    double totalFitnessPerGeneration = 0;
+	ArrayList<Individual> individuals;
+	int sizeOfPopulation;
+    int numberOfItems;
+    Knapsack knapsack;
+    double totalFitnessPerGeneration;
 	
 	public Population(int sizeOfPopulation, Knapsack knapsack) {
 		this.sizeOfPopulation = sizeOfPopulation;
         this.numberOfItems = knapsack.numberOfItems;
-        this.knapsackObj = knapsack;
+        this.knapsack = knapsack;
+        this.individuals = new ArrayList<>();
 	}
 	
-	public ArrayList<String> makePopulation() {
+	public void seed() {
 		
         for(int i = 0; i < sizeOfPopulation; i++) {
-            
-            population.add(makeGene());      
+            individuals.add(createGene());
         }
-        return population;
     }
 	
-    private String makeGene() {
+    private Individual createGene() {
 
         StringBuilder gene = new StringBuilder(numberOfItems);
-
         for(int i = 0; i < numberOfItems; i++) {
-        	
-            double random = Math.random(); 
-            
+
+            double random = Math.random();
             char ch = ( random > 0.5) ? '1' : '0';
-            
             gene.append(ch);
         }
-        
-        return gene.toString();
+        return new Individual(gene.toString());
     }
 
     public ArrayList<Double> evaluatePopulation(ArrayList<Double> fitness) {
 
         this.totalFitnessPerGeneration = 0;
 
-        for(int i = 0; i < this.sizeOfPopulation; i++) {
+        for(Individual individual: this.individuals) {
 
-            double temp = Individual.evaluateGene(population.get(i), knapsackObj);
-
+            double temp = individual.calcFitness(this.knapsack);
             this.totalFitnessPerGeneration += temp;
-
             fitness.add(temp);
         }
         return fitness;

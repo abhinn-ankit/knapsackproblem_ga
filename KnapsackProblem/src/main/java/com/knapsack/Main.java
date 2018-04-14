@@ -1,52 +1,60 @@
-package com.knapsack;
+package main.java.com.knapsack;
 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Knapsack {
+public class Main {
 
-    public int numberOfItems;
-    public int knapsackCapacity;
-    public int maxWeight;
-    public int maxValue;
+    public static void main(String[] args) {
 
-    public ArrayList<Integer> valuesOfItems;
-    public ArrayList<Integer> weightOfItems;
+        Knapsack knapsack = populateKnapsack();
 
-    public Knapsack() {
-        this.numberOfItems = 0;
-        this.knapsackCapacity = 0;
-        this.maxValue = 0;
-        this.maxWeight = 0;
-        this.valuesOfItems = new ArrayList<>();
-        this.weightOfItems = new ArrayList<>();
+        System.out.println("Enter the individuals size: ");
+        int sizeOfPopulation = (int) inputNumber();
+
+        System.out.println("Enter the maximum number of generations: ");
+        int maxGenerations = (int) inputNumber();
+
+        System.out.println("Enter the crossover probability: ");
+        double crossoverProbability = (double) inputNumber();
+
+        System.out.println("Enter the mutation probability: ");
+        double mutationProbability = (double) inputNumber();
+
+        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, sizeOfPopulation, maxGenerations, crossoverProbability, mutationProbability);
+        geneticAlgorithm.start();
+
     }
 
-    public void fillData() {
-
+    public static Knapsack populateKnapsack() {
         Scanner c = new Scanner(System.in);
 
         System.out.println("Enter the knapsack capacity: ");
-        knapsackCapacity = (int) inputNumber();
+        int knapsackCapacity = (int) inputNumber();
 
         System.out.println("Enter the number of items: ");
-        numberOfItems = (int) inputNumber();
+        int numberOfItems = (int) inputNumber();
 
         System.out.println("Enter the max-weight for items: ");
-        maxWeight = (int) inputNumber();
+        int maxWeight = (int) inputNumber();
 
         System.out.println("Enter the max-values for items: ");
-        maxValue = (int) inputNumber();
+        int maxValue = (int) inputNumber();
 
         Random randomValue = new Random(10);
         Random randomWeight = new Random(5);
 
+        ArrayList<Integer> itemValues = new ArrayList<>();
+        ArrayList<Integer> itemWeights = new ArrayList<>();
         // Randomly generate weight and value
         for (int i = 0; i < numberOfItems; i++) {
-            valuesOfItems.add((int) randomValue.nextInt(maxValue) + 1);
-            weightOfItems.add((int) randomWeight.nextInt(maxWeight) + 1);
+            itemValues.add(randomValue.nextInt(maxValue) + 1);
+            itemWeights.add(randomWeight.nextInt(maxWeight) + 1);
         }
+
+        Knapsack knapsack = new Knapsack(knapsackCapacity, numberOfItems, itemValues,itemWeights);
+        return knapsack;
 
     }
 
