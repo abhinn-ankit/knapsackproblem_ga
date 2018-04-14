@@ -54,5 +54,5 @@ public class Population {
         }
         return fitness;
     }
-
+    
 }
