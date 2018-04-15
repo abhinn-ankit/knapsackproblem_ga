@@ -10,7 +10,7 @@ public class Individual {
         this.fitnessScore = 0;
     }
 
-    public double calcFitness(Knapsack knapsack) {
+    public void calculateFitness(Knapsack knapsack) {
 
         double totalWeight = 0;
         double totalValue = 0;
@@ -30,8 +30,6 @@ public class Individual {
         if (diff >= 0) {
             this.fitnessScore = totalValue;
         }
-
-        return this.fitnessScore;
     }
 
     public int compareTo(Individual that) {

@@ -10,7 +10,7 @@ public class Main {
 
         Knapsack knapsack = populateKnapsack();
 
-        System.out.println("Enter the individuals size: ");
+        System.out.println("Enter the population size: ");
         int sizeOfPopulation = (int) inputNumber();
 
         System.out.println("Enter the maximum number of generations: ");
