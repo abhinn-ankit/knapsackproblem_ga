@@ -4,10 +4,18 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
+
 public class Main {
-
+	
+	final static Logger logger = Logger.getLogger(Main.class);
+	
     public static void main(String[] args) {
-
+    	
+    	BasicConfigurator.configure();
+    	
         Knapsack knapsack = populateKnapsack();
 
         System.out.println("Enter the population size: ");
@@ -21,7 +29,8 @@ public class Main {
 
         System.out.println("Enter the mutation probability: ");
         double mutationProbability = (double) inputNumber();
-
+        
+        logger.info("Starting genetic algorithm");
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, sizeOfPopulation, maxGenerations, crossoverProbability, mutationProbability);
         geneticAlgorithm.start();
 
