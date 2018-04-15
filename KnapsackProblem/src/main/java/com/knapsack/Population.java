@@ -15,12 +15,12 @@ public class Population {
         this.individuals = new ArrayList<>();
 	}
 
-    public void sort(){
+    void sort(){
         calcIndividualFitness(this.individuals);
         sort(this.individuals);
     }
 
-    public ArrayList<Individual> calcIndividualFitness(ArrayList<Individual> individualArrayList) {
+    ArrayList<Individual> calcIndividualFitness(ArrayList<Individual> individualArrayList) {
         for (Individual in: individualArrayList) {
             in.calculateFitness(this.knapsack);
         }
@@ -41,15 +41,15 @@ public class Population {
         array.set(j, a);
     }
 
-    public void seed() {
+    void seed() {
         for(int i = 0; i < populationSize; i++) {
-            individuals.add(createGene());
+            individuals.add(createGene(knapsack.numberOfItems));
         }
     }
 	
-    private Individual createGene() {
-        StringBuilder gene = new StringBuilder(knapsack.numberOfItems);
-        for(int i = 0; i < knapsack.numberOfItems; i++) {
+    public static Individual createGene(int numberOfItems) {
+        StringBuilder gene = new StringBuilder(numberOfItems);
+        for(int i = 0; i < numberOfItems; i++) {
             double random = Math.random();
             char ch = ( random > 0.5) ? '1' : '0';
             gene.append(ch);

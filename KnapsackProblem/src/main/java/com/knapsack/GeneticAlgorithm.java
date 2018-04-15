@@ -61,9 +61,11 @@ public class GeneticAlgorithm {
             cull();
 
         for (int i = 0; i < this.populationSize / 2; i++) {
-            Individual individual1 = selectIndividual(generationTotalFitness);
-            Individual individual2 = selectIndividual(generationTotalFitness);
-            crossover(individual1, individual2);
+            Individual individual1 = selectIndividual(generationTotalFitness, this.population.individuals);
+            Individual individual2 = selectIndividual(generationTotalFitness, this.population.individuals);
+            if (individual1 != null && individual2 != null) {
+                crossover(individual1, individual2);
+            }
         }
 
         for (int i = 0; i < this.children.size(); i++) {
@@ -77,44 +79,43 @@ public class GeneticAlgorithm {
         this.populationSize = this.population.individuals.size();
 
         // Output population
-        logger.info("\nGeneration " + (this.generationNo + 1) + ":");
+        logger.info("Generation " + (this.generationNo + 1) + ":");
         logger.info("=============");
         logger.info("Population:");
         for (int l = 0; l < this.populationSize; l++) {
             logger.info((l + 1) + " - " + this.population.individuals.get(l));
         }
 
+        // Emptying children list for new generation
         this.children = new ArrayList<>();
         this.population.sort();
 
         this.fittestOfGenerations.add(this.population.individuals.get(0));
         // Output best fitness of generation
         logger.info("Fitness score of best solution of generation " + (this.generationNo + 1) +
-                ": " + this.fittestOfGenerations.get(this.generationNo));
+                ": " + this.fittestOfGenerations.get(this.generationNo) + "\n\n");
 
     }
 
     public void cull() {
 
-        //this.population.sort();
-        for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize/2; i--) {
+        for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize / 2; i--) {
             this.population.individuals.remove(i);
         }
         this.populationSize = this.population.individuals.size();
 
     }
 
-    private Individual selectIndividual(double generationTotalFitness) {
+    public static Individual selectIndividual(double generationTotalFitness, ArrayList<Individual> individuals) {
 
         double rand = Math.random() * generationTotalFitness;
-        // Use random number to select gene based on fitness level
-        for (Individual individual : population.individuals) {
+        for (Individual individual : individuals) {
             if (rand <= individual.fitnessScore) {
                 return individual;
             }
             rand = rand - individual.fitnessScore;
         }
-        return population.individuals.get(0);
+        return null;
     }
 
     private void crossover(Individual individual1, Individual individual2) {
@@ -132,7 +133,7 @@ public class GeneticAlgorithm {
         // Random mutation
         Random random = new Random();
         double rand_mutation = random.nextDouble();
-        if (rand_mutation <= mutationProbability) {
+        if (rand_mutation <= this.mutationProbability) {
             Individual mutatedIndividual;
             mutatedIndividual = this.children.get(childIndex);
             int index = random.nextInt(knapsack.numberOfItems);

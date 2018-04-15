@@ -2,6 +2,8 @@ package test.java.com.knapsack;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
+
+import main.java.com.knapsack.GeneticAlgorithm;
 import org.junit.jupiter.api.Test;
 
 import main.java.com.knapsack.Individual;
@@ -55,5 +57,37 @@ class MainTest {
 		assertTrue(list.get(1).fitnessScore == 40);
 		assertTrue(list.get(4).fitnessScore == 10);
 	}
+
+	@Test
+	void testSelectIndividual() {
+        ArrayList<Individual> list = new ArrayList<>();
+
+        for(int i = 0; i<5; i++) {
+            list.add(new Individual("10101"));
+        }
+        list.get(0).fitnessScore = 10;
+        list.get(1).fitnessScore = 20;
+        list.get(2).fitnessScore = 30;
+        list.get(3).fitnessScore = 40;
+        list.get(4).fitnessScore = 50;
+
+        assertNotNull(GeneticAlgorithm.selectIndividual(150, list));
+    }
+
+    @Test
+    void testCompareTo() {
+	    Individual individual1 = new Individual("010101");
+	    Individual individual2 = new Individual("010111");
+	    individual1.fitnessScore = 150;
+	    individual2.fitnessScore = 200;
+	    assertTrue(individual1.compareTo(individual2) == -1);
+	    assertTrue(individual2.compareTo(individual1) == 1);
+    }
+
+    @Test
+    void testCreateGene() {
+        Individual individual = Population.createGene(10);
+        assertTrue(individual.gene.length() == 10);
+    }
 
 }
