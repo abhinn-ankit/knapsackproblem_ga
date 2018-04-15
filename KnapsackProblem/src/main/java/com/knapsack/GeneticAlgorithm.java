@@ -1,5 +1,7 @@
 package main.java.com.knapsack;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,6 +12,7 @@ public class GeneticAlgorithm {
     Population population;
     ArrayList<Individual> fittestOfGenerations;
     ArrayList<Individual> children;
+    final static Logger logger = Logger.getLogger(GeneticAlgorithm.class);
 
     //Input variables
     int populationSize;
@@ -40,7 +43,7 @@ public class GeneticAlgorithm {
                     }
                 }
                 if (count == 10) {
-                    System.out.println("\nStop criterion met");
+                    logger.info("\nStop criterion met");
                     break;
                 }
             }
@@ -74,19 +77,19 @@ public class GeneticAlgorithm {
         this.populationSize = this.population.individuals.size();
 
         // Output population
-        System.out.println("\nGeneration " + (this.generationNo + 1) + ":");
+        logger.info("\nGeneration " + (this.generationNo + 1) + ":");
         if ((this.generationNo + 1) < 10) {
-            System.out.println("=============");
+            logger.info("=============");
         }
         if ((this.generationNo + 1) >= 10) {
-            System.out.println("==============");
+            logger.info("==============");
         }
         if ((this.generationNo + 1) >= 100) {
-            System.out.println("===============");
+            logger.info("===============");
         }
         System.out.println("Population:");
         for (int l = 0; l < this.populationSize; l++) {
-            System.out.println((l + 1) + " - " + this.population.individuals.get(l));
+            logger.info((l + 1) + " - " + this.population.individuals.get(l));
         }
 
         this.children = new ArrayList<>();
@@ -94,7 +97,7 @@ public class GeneticAlgorithm {
 
         this.fittestOfGenerations.add(this.population.individuals.get(0));
         // Output best fitness of generation
-        System.out.println("Fitness score of best solution of generation " + (this.generationNo + 1) +
+        logger.info("Fitness score of best solution of generation " + (this.generationNo + 1) +
                 ": " + this.fittestOfGenerations.get(this.generationNo));
 
     }
