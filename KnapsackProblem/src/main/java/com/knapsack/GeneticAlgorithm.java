@@ -68,7 +68,7 @@ public class GeneticAlgorithm {
         }
 
         this.population.calcIndividualFitness(this.children);
-        Population.sort(this.children);
+        //Population.sort(this.children);
 
         this.population.individuals.addAll(this.children);
         this.populationSize = this.population.individuals.size();
@@ -101,7 +101,7 @@ public class GeneticAlgorithm {
 
     public void cull() {
 
-        this.population.sort();
+        //this.population.sort();
         for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize/2; i--) {
             this.population.individuals.remove(i);
         }

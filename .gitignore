@@ -32,3 +32,6 @@ KnapsackProblem/out/*
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+.classpath
+.project

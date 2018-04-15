@@ -2,16 +2,16 @@ package main.java.com.knapsack;
 
 public class Individual {
 
-    double fitnessScore;
-    double totalWeight;
-    String gene;
+    public double fitnessScore;
+    public double totalWeight;
+    public String gene;
 
     public Individual(String gene) {
         this.gene = gene;
         this.fitnessScore = 0;
     }
 
-    public void calculateFitness(Knapsack knapsack) {
+    public double calculateFitness(Knapsack knapsack) {
 
         this.totalWeight = 0;
         double totalValue = 0;
@@ -30,6 +30,7 @@ public class Individual {
         if (diff >= 0) {
             this.fitnessScore = totalValue;
         }
+        return this.fitnessScore;
     }
 
     public int compareTo(Individual that) {
