@@ -16,8 +16,8 @@ public class Main {
     	
     	BasicConfigurator.configure();
 
-        System.out.println("Enter the population size: ");
-        int populationSize = (int) inputNumber();
+        System.out.println("Enter the Maximum population size: ");
+        int maxPopulationSize = (int) inputNumber();
 
         System.out.println("Enter the maximum number of generations: ");
         int maxGenerations = (int) inputNumber();
@@ -28,7 +28,7 @@ public class Main {
         Knapsack knapsack = populateKnapsack();
         
         logger.info("Starting genetic algorithm");
-        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, populationSize, maxGenerations, mutationProbability);
+        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, maxPopulationSize, maxGenerations, mutationProbability);
         geneticAlgorithm.start();
 
     }

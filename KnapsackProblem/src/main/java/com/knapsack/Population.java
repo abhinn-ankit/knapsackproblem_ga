@@ -9,8 +9,8 @@ public class Population {
     Knapsack knapsack;
     ArrayList<Individual> individuals;
 	
-	public Population(int populationSize, Knapsack knapsack) {
-		this.populationSize = populationSize;
+	public Population(Knapsack knapsack) {
+		this.populationSize = 10;
         this.knapsack = knapsack;
         this.individuals = new ArrayList<>();
 	}

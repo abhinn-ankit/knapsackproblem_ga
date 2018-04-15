@@ -13,22 +13,24 @@ public class GeneticAlgorithm {
 
     //Input variables
     int populationSize;
+    int maxPopulationSize;
     int maxGenerations;
     double mutationProbability;
 
-    public GeneticAlgorithm(Knapsack knapsack, int populationSize, int maxGenerations, double mutationProbability) {
+    public GeneticAlgorithm(Knapsack knapsack, int maxPopulationSize, int maxGenerations, double mutationProbability) {
         this.knapsack = knapsack;
-        this.populationSize = populationSize;
+        this.maxPopulationSize = maxPopulationSize;
         this.maxGenerations = maxGenerations;
         this.mutationProbability = mutationProbability;
         this.generationNo = 0;
         this.fittestOfGenerations = new ArrayList<>();
         this.children = new ArrayList<>();
-        this.population = new Population(this.populationSize, this.knapsack);
+        this.population = new Population(this.knapsack);
     }
 
     public void start() {
         this.population.seed();
+        this.populationSize = this.population.individuals.size();
         while (this.generationNo < this.maxGenerations) {
             if (this.generationNo > 20) {
                 int count = 1;
@@ -52,9 +54,8 @@ public class GeneticAlgorithm {
 
         // Calculate the fitness of all individuals and store their sum
         double generationTotalFitness = population.totalGenerationFitness();
-        double meanFitness = generationTotalFitness / this.population.individuals.size();
         if (this.generationNo > 0)
-            cull(meanFitness);
+            cull();
 
         for (int i = 0; i < this.populationSize / 2; i++) {
             Individual individual1 = selectIndividual(generationTotalFitness);
@@ -89,7 +90,6 @@ public class GeneticAlgorithm {
         }
 
         this.children = new ArrayList<>();
-
         this.population.sort();
 
         this.fittestOfGenerations.add(this.population.individuals.get(0));
@@ -99,13 +99,11 @@ public class GeneticAlgorithm {
 
     }
 
-    public void cull(double meanFitness) {
+    public void cull() {
 
         this.population.sort();
-        for (int i = 0; i < this.population.individuals.size() && this.population.individuals.size() > 4; i++) {
-            if (this.population.individuals.get(i).fitnessScore < meanFitness) {
-                this.population.individuals.remove(i);
-            }
+        for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize; i++) {
+            this.population.individuals.remove(i);
         }
         this.populationSize = this.population.individuals.size();
 
@@ -132,7 +130,6 @@ public class GeneticAlgorithm {
         String tempGene2 = individual2.gene.substring(0, swapIndex) + individual1.gene.substring(swapIndex);
         this.children.add(new Individual(tempGene1));
         this.children.add(new Individual(tempGene2));
-
     }
 
     private void mutateGene(int childIndex) {
