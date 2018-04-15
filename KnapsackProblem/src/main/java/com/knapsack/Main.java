@@ -15,8 +15,6 @@ public class Main {
     public static void main(String[] args) {
     	
     	BasicConfigurator.configure();
-    	
-        Knapsack knapsack = populateKnapsack();
 
         System.out.println("Enter the population size: ");
         int populationSize = (int) inputNumber();
@@ -24,14 +22,13 @@ public class Main {
         System.out.println("Enter the maximum number of generations: ");
         int maxGenerations = (int) inputNumber();
 
-        System.out.println("Enter the crossover probability: ");
-        double crossoverProbability = (double) inputNumber();
-
         System.out.println("Enter the mutation probability: ");
         double mutationProbability = (double) inputNumber();
+
+        Knapsack knapsack = populateKnapsack();
         
         logger.info("Starting genetic algorithm");
-        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, populationSize, maxGenerations, crossoverProbability, mutationProbability);
+        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, populationSize, maxGenerations, mutationProbability);
         geneticAlgorithm.start();
 
     }

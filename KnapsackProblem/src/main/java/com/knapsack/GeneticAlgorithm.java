@@ -15,14 +15,12 @@ public class GeneticAlgorithm {
     int populationSize;
     int maxGenerations;
     double mutationProbability;
-    double crossoverProbability;
 
-    public GeneticAlgorithm(Knapsack knapsack, int populationSize, int maxGenerations, double crossoverProbability, double mutationProbability) {
+    public GeneticAlgorithm(Knapsack knapsack, int populationSize, int maxGenerations, double mutationProbability) {
         this.knapsack = knapsack;
         this.populationSize = populationSize;
         this.maxGenerations = maxGenerations;
         this.mutationProbability = mutationProbability;
-        this.crossoverProbability = crossoverProbability;
         this.generationNo = 0;
         this.fittestOfGenerations = new ArrayList<>();
         this.children = new ArrayList<>();
@@ -54,8 +52,9 @@ public class GeneticAlgorithm {
 
         // Calculate the fitness of all individuals and store their sum
         double generationTotalFitness = population.totalGenerationFitness();
+        double meanFitness = generationTotalFitness / this.population.individuals.size();
         if (this.generationNo > 0)
-            cull();
+            cull(meanFitness);
 
         for (int i = 0; i < this.populationSize / 2; i++) {
             Individual individual1 = selectIndividual(generationTotalFitness);
@@ -63,10 +62,8 @@ public class GeneticAlgorithm {
             crossover(individual1, individual2);
         }
 
-        if (this.populationSize % 2 == 1) {
-            Individual individual1 = selectIndividual(generationTotalFitness);
-            Individual individual2 = selectIndividual(generationTotalFitness);
-            crossover(individual1, individual2);
+        for (int i = 0; i < this.children.size(); i++) {
+            mutateGene(i);
         }
 
         this.population.calcIndividualFitness(this.children);
@@ -102,19 +99,13 @@ public class GeneticAlgorithm {
 
     }
 
-    public void cull() {
-        double rand = Math.random();
-        int keep = 0;
+    public void cull(double meanFitness) {
 
-        if (rand * this.populationSize > 2) {
-            keep = (int) Math.floor(rand * this.populationSize);
-        } else {
-            keep = 2;
-        }
-        // sort the population
         this.population.sort();
-        for (int i = this.population.individuals.size() - 1; i > this.populationSize - keep; i--) {
-            this.population.individuals.remove(i);
+        for (int i = 0; i < this.population.individuals.size() && this.population.individuals.size() > 4; i++) {
+            if (this.population.individuals.get(i).fitnessScore < meanFitness) {
+                this.population.individuals.remove(i);
+            }
         }
         this.populationSize = this.population.individuals.size();
 
@@ -122,9 +113,7 @@ public class GeneticAlgorithm {
 
     private Individual selectIndividual(double generationTotalFitness) {
 
-        // Generate random number between 0 and total_fitness_of_generation
         double rand = Math.random() * generationTotalFitness;
-
         // Use random number to select gene based on fitness level
         for (Individual individual : population.individuals) {
             if (rand <= individual.fitnessScore) {
@@ -132,68 +121,37 @@ public class GeneticAlgorithm {
             }
             rand = rand - individual.fitnessScore;
         }
-
         return population.individuals.get(0);
     }
 
     private void crossover(Individual individual1, Individual individual2) {
 
         Random random = new Random();
-        double crossover = random.nextDouble();
+        int swapIndex = random.nextInt(knapsack.numberOfItems) + 1;
+        String tempGene1 = individual1.gene.substring(0, swapIndex) + individual2.gene.substring(swapIndex);
+        String tempGene2 = individual2.gene.substring(0, swapIndex) + individual1.gene.substring(swapIndex);
+        this.children.add(new Individual(tempGene1));
+        this.children.add(new Individual(tempGene2));
 
-        if (crossover <= crossoverProbability) {
-            int swapIndex = random.nextInt(knapsack.numberOfItems) + 1;
-            String tempGene1 = individual1.gene.substring(0, swapIndex) + individual2.gene.substring(swapIndex);
-            String tempGene2 = individual2.gene.substring(0, swapIndex) + individual1.gene.substring(swapIndex);
-            this.children.add(new Individual(tempGene1));
-            this.children.add(new Individual(tempGene2));
-        } else {
-            this.children.add(individual1);
-            this.children.add(individual2);
-        }
-
-        // Perform mutation if required
-        mutateGene();
     }
 
-    private void mutateGene() {
+    private void mutateGene(int childIndex) {
 
         // Random mutation
         Random random = new Random();
         double rand_mutation = random.nextDouble();
         if (rand_mutation <= mutationProbability) {
-
             Individual mutatedIndividual;
-
-            // Mutation for which child
-            boolean whichChild = random.nextBoolean();
-
-            // Mutate gene
-            if (whichChild) {
-                mutatedIndividual = this.children.get(this.children.size() - 1);
-                int index = random.nextInt(knapsack.numberOfItems);
-                StringBuilder mutatedGene = new StringBuilder(mutatedIndividual.gene);
-                if (mutatedIndividual.gene.charAt(index) == '1') {
-                    mutatedGene.setCharAt(index, '0');
-                    this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
-                }
-                if (mutatedIndividual.gene.charAt(index) == '0') {
-                    mutatedGene.setCharAt(index, '1');
-                    this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
-                }
+            mutatedIndividual = this.children.get(childIndex);
+            int index = random.nextInt(knapsack.numberOfItems);
+            StringBuilder mutatedGene = new StringBuilder(mutatedIndividual.gene);
+            if (mutatedIndividual.gene.charAt(index) == '1') {
+                mutatedGene.setCharAt(index, '0');
+                this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
             }
-            if (!whichChild) {
-                mutatedIndividual = this.children.get(this.children.size() - 2);
-                int index = random.nextInt(knapsack.numberOfItems);
-                StringBuilder mutatedGene = new StringBuilder(mutatedIndividual.gene);
-                if (mutatedIndividual.gene.charAt(index) == '1') {
-                    mutatedGene.setCharAt(index, '0');
-                    this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
-                }
-                if (mutatedIndividual.gene.charAt(index) == '0') {
-                    mutatedGene.setCharAt(index, '1');
-                    this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
-                }
+            if (mutatedIndividual.gene.charAt(index) == '0') {
+                mutatedGene.setCharAt(index, '1');
+                this.children.set(this.children.size() - 1, new Individual(mutatedGene.toString()));
             }
         }
     }
