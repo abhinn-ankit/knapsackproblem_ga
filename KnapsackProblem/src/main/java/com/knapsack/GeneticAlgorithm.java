@@ -30,29 +30,16 @@ public class GeneticAlgorithm {
     }
 
     public void start() {
-
         this.population.seed();
         while (this.generationNo < this.maxGenerations) {
             if (this.generationNo > 20) {
-                double fitness1 = this.fittestOfGenerations.get(generationNo - 1).fitnessScore;
-                double fitness2 = this.fittestOfGenerations.get(generationNo - 2).fitnessScore;
-                double fitness3 = this.fittestOfGenerations.get(generationNo - 3).fitnessScore;
-                double fitness4 = this.fittestOfGenerations.get(generationNo - 4).fitnessScore;
-                double fitness5 = this.fittestOfGenerations.get(generationNo - 5).fitnessScore;
-                double fitness6 = this.fittestOfGenerations.get(generationNo - 6).fitnessScore;
-                double fitness7 = this.fittestOfGenerations.get(generationNo - 7).fitnessScore;
-                double fitness8 = this.fittestOfGenerations.get(generationNo - 8).fitnessScore;
-                double fitness9 = this.fittestOfGenerations.get(generationNo - 9).fitnessScore;
-                double fitness10 = this.fittestOfGenerations.get(generationNo - 10).fitnessScore;
-                if (fitness1 == fitness2
-                        && fitness1 == fitness3
-                        && fitness1 == fitness4
-                        && fitness1 == fitness5
-                        && fitness1 == fitness6
-                        && fitness1 == fitness7
-                        && fitness1 == fitness8
-                        && fitness1 == fitness9
-                        && fitness1 == fitness10) {
+                int count = 1;
+                for (int i = 1; i < 10; i++) {
+                    if (this.fittestOfGenerations.get(generationNo - i - 1).fitnessScore == this.fittestOfGenerations.get(generationNo - 1).fitnessScore) {
+                        count++;
+                    }
+                }
+                if (count == 10) {
                     System.out.println("\nStop criterion met");
                     break;
                 }
