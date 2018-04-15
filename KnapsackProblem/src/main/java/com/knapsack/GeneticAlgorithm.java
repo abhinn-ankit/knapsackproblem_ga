@@ -102,7 +102,7 @@ public class GeneticAlgorithm {
     public void cull() {
 
         this.population.sort();
-        for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize; i++) {
+        for (int i = this.population.individuals.size() - 1; this.population.individuals.size() > this.maxPopulationSize/2; i--) {
             this.population.individuals.remove(i);
         }
         this.populationSize = this.population.individuals.size();

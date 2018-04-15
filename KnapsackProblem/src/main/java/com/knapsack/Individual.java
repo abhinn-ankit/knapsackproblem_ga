@@ -3,6 +3,7 @@ package main.java.com.knapsack;
 public class Individual {
 
     double fitnessScore;
+    double totalWeight;
     String gene;
 
     public Individual(String gene) {
@@ -12,16 +13,15 @@ public class Individual {
 
     public void calculateFitness(Knapsack knapsack) {
 
-        double totalWeight = 0;
+        this.totalWeight = 0;
         double totalValue = 0;
         double diff = 0;
         char ch = '0';
 
         for (int i = 0; i < knapsack.numberOfItems; i++) {
-
             ch = this.gene.charAt(i);
             if (ch == '1') {
-                totalWeight = totalWeight + knapsack.itemWeights.get(i);
+                this.totalWeight = this.totalWeight + knapsack.itemWeights.get(i);
                 totalValue = totalValue + knapsack.itemValues.get(i);
             }
         }
@@ -40,6 +40,6 @@ public class Individual {
 
     @Override
     public String toString() {
-        return this.gene+" : "+this.fitnessScore;
+        return this.gene+" with total-weight: "+this.totalWeight+" and Fitness score: "+this.fitnessScore;
     }
 }
