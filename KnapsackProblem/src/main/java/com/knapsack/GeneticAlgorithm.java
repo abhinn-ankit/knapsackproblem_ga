@@ -78,16 +78,8 @@ public class GeneticAlgorithm {
 
         // Output population
         logger.info("\nGeneration " + (this.generationNo + 1) + ":");
-        if ((this.generationNo + 1) < 10) {
-            logger.info("=============");
-        }
-        if ((this.generationNo + 1) >= 10) {
-            logger.info("==============");
-        }
-        if ((this.generationNo + 1) >= 100) {
-            logger.info("===============");
-        }
-        System.out.println("Population:");
+        logger.info("=============");
+        logger.info("Population:");
         for (int l = 0; l < this.populationSize; l++) {
             logger.info((l + 1) + " - " + this.population.individuals.get(l));
         }
