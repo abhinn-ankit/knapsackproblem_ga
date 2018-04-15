@@ -118,10 +118,6 @@ public class GeneticAlgorithm {
         }
         this.populationSize = this.population.individuals.size();
 
-        if (this.population.individuals.get(this.populationSize - 1).fitnessScore == 0) {
-
-        }
-
     }
 
     private Individual selectIndividual(double generationTotalFitness) {
@@ -142,10 +138,10 @@ public class GeneticAlgorithm {
 
     private void crossover(Individual individual1, Individual individual2) {
 
-        double crossover = Math.random();
+        Random random = new Random();
+        double crossover = random.nextDouble();
 
         if (crossover <= crossoverProbability) {
-            Random random = new Random();
             int swapIndex = random.nextInt(knapsack.numberOfItems) + 1;
             String tempGene1 = individual1.gene.substring(0, swapIndex) + individual2.gene.substring(swapIndex);
             String tempGene2 = individual2.gene.substring(0, swapIndex) + individual1.gene.substring(swapIndex);
@@ -163,11 +159,11 @@ public class GeneticAlgorithm {
     private void mutateGene() {
 
         // Random mutation
-        double rand_mutation = Math.random();
+        Random random = new Random();
+        double rand_mutation = random.nextDouble();
         if (rand_mutation <= mutationProbability) {
 
             Individual mutatedIndividual;
-            Random random = new Random();
 
             // Mutation for which child
             boolean whichChild = random.nextBoolean();
