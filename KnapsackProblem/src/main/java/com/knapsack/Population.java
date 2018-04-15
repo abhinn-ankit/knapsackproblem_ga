@@ -4,21 +4,19 @@ import java.util.ArrayList;
 
 public class Population {
 
-	int sizeOfPopulation;
+	int populationSize;
     double generationTotalFitness;
     Knapsack knapsack;
     ArrayList<Individual> individuals;
 	
-	public Population(int sizeOfPopulation, Knapsack knapsack) {
-		this.sizeOfPopulation = sizeOfPopulation;
+	public Population(int populationSize, Knapsack knapsack) {
+		this.populationSize = populationSize;
         this.knapsack = knapsack;
         this.individuals = new ArrayList<>();
 	}
 
     public void sort(){
-        ArrayList<Individual> temp = calcIndividualFitness(this.individuals);
-        this.individuals.clear();
-        this.individuals = temp;
+        calcIndividualFitness(this.individuals);
         sort(this.individuals);
     }
 
@@ -44,7 +42,7 @@ public class Population {
     }
 
     public void seed() {
-        for(int i = 0; i < sizeOfPopulation; i++) {
+        for(int i = 0; i < populationSize; i++) {
             individuals.add(createGene());
         }
     }

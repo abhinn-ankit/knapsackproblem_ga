@@ -12,35 +12,51 @@ public class GeneticAlgorithm {
     ArrayList<Individual> children;
 
     //Input variables
-    int sizeOfPopulation;
+    int populationSize;
     int maxGenerations;
     double mutationProbability;
     double crossoverProbability;
 
-    public GeneticAlgorithm(Knapsack knapsack, int sizeOfPopulation, int maxGenerations, double crossoverProbability, double mutationProbability) {
+    public GeneticAlgorithm(Knapsack knapsack, int populationSize, int maxGenerations, double crossoverProbability, double mutationProbability) {
         this.knapsack = knapsack;
-        this.sizeOfPopulation = sizeOfPopulation;
+        this.populationSize = populationSize;
         this.maxGenerations = maxGenerations;
         this.mutationProbability = mutationProbability;
         this.crossoverProbability = crossoverProbability;
         this.generationNo = 0;
         this.fittestOfGenerations = new ArrayList<>();
         this.children = new ArrayList<>();
-        this.population = new Population(this.sizeOfPopulation, this.knapsack);
+        this.population = new Population(this.populationSize, this.knapsack);
     }
 
     public void start() {
 
         this.population.seed();
-        while (this.generationNo <= this.maxGenerations) {
-            if (this.generationNo > 10)
-                if (this.fittestOfGenerations.get(generationNo - 1).equals(this.fittestOfGenerations.get(generationNo - 2))
-                        && this.fittestOfGenerations.get(generationNo - 1).equals(this.fittestOfGenerations.get(generationNo - 3))
-                        && this.fittestOfGenerations.get(generationNo - 1).equals(this.fittestOfGenerations.get(generationNo - 4))
-                        && this.fittestOfGenerations.get(generationNo - 1).equals(this.fittestOfGenerations.get(generationNo - 5))
-                        && this.fittestOfGenerations.get(generationNo - 1).equals(this.fittestOfGenerations.get(generationNo - 6))) {
+        while (this.generationNo < this.maxGenerations) {
+            if (this.generationNo > 20) {
+                double fitness1 = this.fittestOfGenerations.get(generationNo - 1).fitnessScore;
+                double fitness2 = this.fittestOfGenerations.get(generationNo - 2).fitnessScore;
+                double fitness3 = this.fittestOfGenerations.get(generationNo - 3).fitnessScore;
+                double fitness4 = this.fittestOfGenerations.get(generationNo - 4).fitnessScore;
+                double fitness5 = this.fittestOfGenerations.get(generationNo - 5).fitnessScore;
+                double fitness6 = this.fittestOfGenerations.get(generationNo - 6).fitnessScore;
+                double fitness7 = this.fittestOfGenerations.get(generationNo - 7).fitnessScore;
+                double fitness8 = this.fittestOfGenerations.get(generationNo - 8).fitnessScore;
+                double fitness9 = this.fittestOfGenerations.get(generationNo - 9).fitnessScore;
+                double fitness10 = this.fittestOfGenerations.get(generationNo - 10).fitnessScore;
+                if (fitness1 == fitness2
+                        && fitness1 == fitness3
+                        && fitness1 == fitness4
+                        && fitness1 == fitness5
+                        && fitness1 == fitness6
+                        && fitness1 == fitness7
+                        && fitness1 == fitness8
+                        && fitness1 == fitness9
+                        && fitness1 == fitness10) {
                     System.out.println("\nStop criterion met");
+                    break;
                 }
+            }
             createGenerations();
             this.generationNo++;
         }
@@ -54,13 +70,13 @@ public class GeneticAlgorithm {
         if (this.generationNo > 0)
             cull();
 
-        for (int i = 0; i < this.sizeOfPopulation / 2; i++) {
+        for (int i = 0; i < this.populationSize / 2; i++) {
             Individual individual1 = selectIndividual(generationTotalFitness);
             Individual individual2 = selectIndividual(generationTotalFitness);
             crossover(individual1, individual2);
         }
 
-        if (this.sizeOfPopulation % 2 == 1) {
+        if (this.populationSize % 2 == 1) {
             Individual individual1 = selectIndividual(generationTotalFitness);
             Individual individual2 = selectIndividual(generationTotalFitness);
             crossover(individual1, individual2);
@@ -69,9 +85,8 @@ public class GeneticAlgorithm {
         this.population.calcIndividualFitness(this.children);
         Population.sort(this.children);
 
-        for (int i = 0; i < this.sizeOfPopulation; i++) {
-            this.population.individuals.set(i, this.children.get(i));
-        }
+        this.population.individuals.addAll(this.children);
+        this.populationSize = this.population.individuals.size();
 
         // Output population
         System.out.println("\nGeneration " + (this.generationNo + 1) + ":");
@@ -85,11 +100,11 @@ public class GeneticAlgorithm {
             System.out.println("===============");
         }
         System.out.println("Population:");
-        for (int l = 0; l < this.sizeOfPopulation; l++) {
+        for (int l = 0; l < this.populationSize; l++) {
             System.out.println((l + 1) + " - " + this.population.individuals.get(l));
         }
 
-        this.children.clear();
+        this.children = new ArrayList<>();
 
         this.population.sort();
 
@@ -104,17 +119,22 @@ public class GeneticAlgorithm {
         double rand = Math.random();
         int keep = 0;
 
-        if (rand * sizeOfPopulation > 2) {
-            keep = (int) Math.floor(rand * sizeOfPopulation);
+        if (rand * this.populationSize > 2) {
+            keep = (int) Math.floor(rand * this.populationSize);
         } else {
             keep = 2;
         }
         // sort the population
-        population.sort();
-
-        for (int i = sizeOfPopulation-keep+1; i < sizeOfPopulation; i++) {
-            population.individuals.remove(i);
+        this.population.sort();
+        for (int i = this.population.individuals.size() - 1; i > this.populationSize - keep; i--) {
+            this.population.individuals.remove(i);
         }
+        this.populationSize = this.population.individuals.size();
+
+        if (this.population.individuals.get(this.populationSize - 1).fitnessScore == 0) {
+
+        }
+
     }
 
     private Individual selectIndividual(double generationTotalFitness) {
