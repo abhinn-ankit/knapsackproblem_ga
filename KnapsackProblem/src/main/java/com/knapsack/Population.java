@@ -1,6 +1,7 @@
 package main.java.com.knapsack;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Population {
 
@@ -49,9 +50,9 @@ public class Population {
 	
     public static Individual createGene(int numberOfItems) {
         StringBuilder gene = new StringBuilder(numberOfItems);
+        Random random = new Random();
         for(int i = 0; i < numberOfItems; i++) {
-            double random = Math.random();
-            char ch = ( random > 0.5) ? '1' : '0';
+            char ch = ( random.nextBoolean() ) ? '1' : '0';
             gene.append(ch);
         }
         return new Individual(gene.toString());

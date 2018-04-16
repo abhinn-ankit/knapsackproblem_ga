@@ -12,23 +12,19 @@ public class Individual {
     }
 
     public double calculateFitness(Knapsack knapsack) {
-
         this.totalWeight = 0;
-        double totalValue = 0;
-        double diff = 0;
-        char ch = '0';
-
+        double tempValue = 0;
+        char ch;
         for (int i = 0; i < knapsack.numberOfItems; i++) {
             ch = this.gene.charAt(i);
             if (ch == '1') {
-                this.totalWeight = this.totalWeight + knapsack.itemWeights.get(i);
-                totalValue = totalValue + knapsack.itemValues.get(i);
+                this.totalWeight += knapsack.itemWeights.get(i);
+                tempValue += knapsack.itemValues.get(i);
             }
         }
-
-        diff = knapsack.knapsackCapacity - totalWeight;
+        double diff = knapsack.knapsackCapacity - this.totalWeight;
         if (diff >= 0) {
-            this.fitnessScore = totalValue;
+            this.fitnessScore = tempValue;
         }
         return this.fitnessScore;
     }
