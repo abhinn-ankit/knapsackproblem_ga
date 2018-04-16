@@ -43,7 +43,8 @@ public class GeneticAlgorithm {
                     }
                 }
                 if (count == 10) {
-                    logger.info("\nStop criterion met");
+                    logger.info("\nStop criterion met\n");
+                    logger.info("\n\n\nOptimal solution based on current values: " + this.fittestOfGenerations.get(this.generationNo - 1) + "\n");
                     break;
                 }
             }
@@ -80,7 +81,6 @@ public class GeneticAlgorithm {
 
         // Output population
         logger.info("Generation " + (this.generationNo + 1) + ":");
-        logger.info("=============");
         logger.info("Population:");
         for (int l = 0; l < this.populationSize; l++) {
             logger.info((l + 1) + " - " + this.population.individuals.get(l));

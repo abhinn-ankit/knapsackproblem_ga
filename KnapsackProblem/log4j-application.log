@@ -1,0 +1,914 @@
+0 [main] INFO main.java.com.knapsack.Main  - 
+Enter the Maximum population size: 
+3782 [main] INFO main.java.com.knapsack.Main  - 
+Enter the maximum number of generations: 
+6001 [main] INFO main.java.com.knapsack.Main  - 
+Enter the mutation probability: 
+7863 [main] INFO main.java.com.knapsack.Main  - 
+Enter the knapsack capacity: 
+10166 [main] INFO main.java.com.knapsack.Main  - 
+Enter the number of items: 
+12324 [main] INFO main.java.com.knapsack.Main  - 
+Enter the max-weight for items: 
+14733 [main] INFO main.java.com.knapsack.Main  - 
+Enter the max-values for items: 
+18126 [main] INFO main.java.com.knapsack.Main  -    Values(1): 14
+18127 [main] INFO main.java.com.knapsack.Main  -    Weights(1): 12
+18128 [main] INFO main.java.com.knapsack.Main  -    Values(2): 6
+18128 [main] INFO main.java.com.knapsack.Main  -    Weights(2): 5
+18128 [main] INFO main.java.com.knapsack.Main  -    Values(3): 19
+18128 [main] INFO main.java.com.knapsack.Main  -    Weights(3): 3
+18128 [main] INFO main.java.com.knapsack.Main  -    Values(4): 16
+18128 [main] INFO main.java.com.knapsack.Main  -    Weights(4): 9
+18128 [main] INFO main.java.com.knapsack.Main  -    Values(5): 22
+18128 [main] INFO main.java.com.knapsack.Main  -    Weights(5): 7
+18128 [main] INFO main.java.com.knapsack.Main  -    Values(6): 7
+18128 [main] INFO main.java.com.knapsack.Main  -    Weights(6): 6
+18129 [main] INFO main.java.com.knapsack.Main  -    Values(7): 23
+18129 [main] INFO main.java.com.knapsack.Main  -    Weights(7): 11
+18129 [main] INFO main.java.com.knapsack.Main  -    Values(8): 14
+18129 [main] INFO main.java.com.knapsack.Main  -    Weights(8): 12
+18129 [main] INFO main.java.com.knapsack.Main  - 
+Starting genetic algorithm
+18152 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 1:
+18152 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00010000 with total-weight: 9.0 and Fitness score: 16.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 01010111 with total-weight: 43.0 and Fitness score: 0.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 10111010 with total-weight: 42.0 and Fitness score: 0.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 01010000 with total-weight: 14.0 and Fitness score: 22.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00000110 with total-weight: 17.0 and Fitness score: 30.0
+18183 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 10010111 with total-weight: 50.0 and Fitness score: 0.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 11101111 with total-weight: 56.0 and Fitness score: 0.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 10110101 with total-weight: 42.0 and Fitness score: 0.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00001000 with total-weight: 7.0 and Fitness score: 22.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00010101 with total-weight: 27.0 and Fitness score: 37.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00010000 with total-weight: 9.0 and Fitness score: 16.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18184 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18192 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 1: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 2:
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18193 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00010101 with total-weight: 27.0 and Fitness score: 37.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00000110 with total-weight: 17.0 and Fitness score: 30.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00001000 with total-weight: 7.0 and Fitness score: 22.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 01010000 with total-weight: 14.0 and Fitness score: 22.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00010000 with total-weight: 9.0 and Fitness score: 16.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00010000 with total-weight: 9.0 and Fitness score: 16.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 10110101 with total-weight: 42.0 and Fitness score: 0.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 11101111 with total-weight: 56.0 and Fitness score: 0.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 10010111 with total-weight: 50.0 and Fitness score: 0.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 10111010 with total-weight: 42.0 and Fitness score: 0.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 01010111 with total-weight: 43.0 and Fitness score: 0.0
+18194 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 10111101 with total-weight: 49.0 and Fitness score: 0.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 10010000 with total-weight: 21.0 and Fitness score: 30.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00001100 with total-weight: 13.0 and Fitness score: 29.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00010001 with total-weight: 21.0 and Fitness score: 30.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 10110101 with total-weight: 42.0 and Fitness score: 0.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00010001 with total-weight: 21.0 and Fitness score: 30.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18195 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18196 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00010000 with total-weight: 9.0 and Fitness score: 16.0
+18196 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18196 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 10010001 with total-weight: 33.0 and Fitness score: 44.0
+18197 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 2: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18197 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 3:
+18197 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18197 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18198 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 10010001 with total-weight: 33.0 and Fitness score: 44.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00001101 with total-weight: 25.0 and Fitness score: 43.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00010101 with total-weight: 27.0 and Fitness score: 37.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00010001 with total-weight: 21.0 and Fitness score: 30.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00010001 with total-weight: 21.0 and Fitness score: 30.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 10010001 with total-weight: 33.0 and Fitness score: 44.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18199 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 10111101 with total-weight: 49.0 and Fitness score: 0.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 42 - 00110101 with total-weight: 30.0 and Fitness score: 56.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 43 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 44 - 00010001 with total-weight: 21.0 and Fitness score: 30.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 45 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 46 - 00010101 with total-weight: 27.0 and Fitness score: 37.0
+18200 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 47 - 00101001 with total-weight: 22.0 and Fitness score: 55.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 3: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 4:
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18201 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18202 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 10111101 with total-weight: 49.0 and Fitness score: 0.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 10111101 with total-weight: 49.0 and Fitness score: 0.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 10111001 with total-weight: 43.0 and Fitness score: 0.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18203 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 4: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 5:
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18204 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 10110001 with total-weight: 36.0 and Fitness score: 63.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00110001 with total-weight: 24.0 and Fitness score: 49.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 10111001 with total-weight: 43.0 and Fitness score: 0.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18205 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 5: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 6:
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18206 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18207 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00011101 with total-weight: 34.0 and Fitness score: 59.0
+18208 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 6: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 7:
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18209 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18210 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 7: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 8:
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18211 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18212 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 10011101 with total-weight: 46.0 and Fitness score: 0.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 8: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 9:
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18213 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18214 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 00111100 with total-weight: 25.0 and Fitness score: 64.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 9: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 10:
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18215 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18216 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111100 with total-weight: 25.0 and Fitness score: 64.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 10: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 11:
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18217 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18218 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 01111101 with total-weight: 42.0 and Fitness score: 0.0
+18219 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 11: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 12:
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18220 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18221 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00011101 with total-weight: 34.0 and Fitness score: 59.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 12: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 13:
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18222 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18223 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 13: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 14:
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18224 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18225 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00110101 with total-weight: 30.0 and Fitness score: 56.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 14: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 15:
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18226 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 10111101 with total-weight: 49.0 and Fitness score: 0.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 15: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 16:
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18227 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18228 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18228 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18228 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18228 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18228 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18230 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 42 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 43 - 00111001 with total-weight: 31.0 and Fitness score: 71.0
+18231 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 16: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 17:
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18232 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00101101 with total-weight: 28.0 and Fitness score: 62.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 17: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 18:
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18233 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 18: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 19:
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18234 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18235 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 00110101 with total-weight: 30.0 and Fitness score: 56.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 19: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 20:
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18236 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 36 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 37 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 38 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 39 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 40 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 41 - 00011101 with total-weight: 34.0 and Fitness score: 59.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 20: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Generation 21:
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Population:
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 1 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 2 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 3 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 4 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18237 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 5 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 6 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 7 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 8 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 9 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 10 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 11 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 12 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 13 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 14 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 15 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 16 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 17 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 18 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 19 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 20 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 21 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 22 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 23 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 24 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 25 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 26 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 27 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 28 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 29 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 30 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 31 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 32 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 33 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 34 - 00111101 with total-weight: 37.0 and Fitness score: 78.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 35 - 00111111 with total-weight: 48.0 and Fitness score: 0.0
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - Fitness score of best solution of generation 21: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
+
+18238 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 
+Stop criterion met
+
+18245 [main] INFO main.java.com.knapsack.GeneticAlgorithm  - 
+
+
+Optimal solution based on current values: 00111101 with total-weight: 37.0 and Fitness score: 78.0
+
