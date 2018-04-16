@@ -16,18 +16,18 @@ public class Main {
 
     	BasicConfigurator.configure();
 
-        logger.info("Enter the Maximum population size: ");
+        logger.info("\nEnter the Maximum population size: ");
         int maxPopulationSize = (int) inputNumber();
 
-        logger.info("Enter the maximum number of generations: ");
+        logger.info("\nEnter the maximum number of generations: ");
         int maxGenerations = (int) inputNumber();
 
-        logger.info("Enter the mutation probability: ");
+        logger.info("\nEnter the mutation probability: ");
         double mutationProbability = (double) inputNumber();
 
         Knapsack knapsack = populateKnapsack();
 
-        logger.info("Starting genetic algorithm");
+        logger.info("\nStarting genetic algorithm");
         GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(knapsack, maxPopulationSize, maxGenerations, mutationProbability);
         geneticAlgorithm.start();
 
@@ -36,16 +36,16 @@ public class Main {
     public static Knapsack populateKnapsack() {
         Scanner c = new Scanner(System.in);
 
-        logger.info("Enter the knapsack capacity: ");
+        logger.info("\nEnter the knapsack capacity: ");
         int knapsackCapacity = (int) inputNumber();
 
-        logger.info("Enter the number of items: ");
+        logger.info("\nEnter the number of items: ");
         int numberOfItems = (int) inputNumber();
 
-        logger.info("Enter the max-weight for items: ");
+        logger.info("\nEnter the max-weight for items: ");
         int maxWeight = (int) inputNumber();
 
-        logger.info("Enter the max-values for items: ");
+        logger.info("\nEnter the max-values for items: ");
         int maxValue = (int) inputNumber();
 
         Random randomValue = new Random(10);
