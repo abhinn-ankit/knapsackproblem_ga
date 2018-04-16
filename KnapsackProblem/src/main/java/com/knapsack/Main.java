@@ -18,12 +18,15 @@ public class Main {
 
         logger.info("\nEnter the Maximum population size: ");
         int maxPopulationSize = (int) inputNumber();
+        logger.info(maxPopulationSize);
 
         logger.info("\nEnter the maximum number of generations: ");
         int maxGenerations = (int) inputNumber();
+        logger.info(maxGenerations);
 
         logger.info("\nEnter the mutation probability: ");
         double mutationProbability = (double) inputNumber();
+        logger.info(mutationProbability);
 
         Knapsack knapsack = populateKnapsack();
 
@@ -38,15 +41,19 @@ public class Main {
 
         logger.info("\nEnter the knapsack capacity: ");
         int knapsackCapacity = (int) inputNumber();
+        logger.info(knapsackCapacity);
 
         logger.info("\nEnter the number of items: ");
         int numberOfItems = (int) inputNumber();
+        logger.info(numberOfItems);
 
         logger.info("\nEnter the max-weight for items: ");
         int maxWeight = (int) inputNumber();
+        logger.info(maxWeight);
 
         logger.info("\nEnter the max-values for items: ");
         int maxValue = (int) inputNumber();
+        logger.info(maxValue);
 
         Random randomValue = new Random(10);
         Random randomWeight = new Random(5);
@@ -57,8 +64,7 @@ public class Main {
         for (int i = 0; i < numberOfItems; i++) {
             itemValues.add(randomValue.nextInt(maxValue) + 1);
             itemWeights.add(randomWeight.nextInt(maxWeight) + 1);
-            logger.info("   Values("+(i+1)+"): "+itemValues.get(i));
-            logger.info("   Weights("+(i+1)+"): "+itemWeights.get(i));
+            logger.info("   Values("+(i+1)+"): "+itemValues.get(i) + "   Weights("+(i+1)+"): "+itemWeights.get(i));
         }
 
         Knapsack knapsack = new Knapsack(knapsackCapacity, numberOfItems, itemValues,itemWeights);
